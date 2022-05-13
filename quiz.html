@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERIOD101</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1 id="title"> HOW TO WOMEN </h1>
+
+    <!-- quiz-container -->
+    <div id="quiz-container">
+        <!-- question container -->
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ol type="A">
+                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+            </ol>
+            <h4 id="stat"></h4>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="next">Next</button>
+        </div>
+
+    </div>
+
+    <!-- scoreboard section -->
+    <div id="scoreboard">
+        <h2 id="score-title"> YOU GOT </h2>
+        <h2 id="score"></h2>
+        
+        <h2> 
+            Periods are a natural, healthy part of a girl's life. They shouldn't get in the way of exercising, having fun, and enjoying life
+        </h2>
+        <button type="button" id="score-btn" onclick="backToQuiz()">TAKE ME BACK</button>
+        <button type="button" id="check-answer" onclick="checkAnswer()">SHOW ME MORE</button>
+    </div>
+
+    <!-- answers section -->
+    <div id="answerBank">
+        <h1>RESOURCES</h1>
+
+        <h1> Period is a natural occurrence. Our body prepare for pregnancy EVERYMONTH. Every month that you don’t become pregnant, your body expels tissue that it no longer needs to nourish a fertilized egg.If you experience inconsistencies such as a change in your menstrual regularity, frequency, duration, or volume, talk with your doctor or gynecologist.  
+
+
+            
+        </h1>
+
+<h2>
+    <a href="https://www.zocdoc.com/obgyns?utm_source=google&utm_medium=cpc_generic&utm_campaign=10272223325&utm_term=obgyn%20near%20me&utm_content=106475790190&gclid=Cj0KCQjw4PKTBhD8ARIsAHChzRKx9vbmjuD2QPzS4h8uPl_XWFFkxQzwxzyKEOIFkFvWJXvyrfJ7sSEaAs3WEALw_wcB"> Find OB-GYNs Near You </a>
+</h2>
+<h2>
+    <a href="https://www.cdc.gov/women/index.htm"> CDC Women’s Health </a>
+</h2>
+
+       
+
+
+        <!-- <ol type="1" id="answers">
+        </ol> -->
+        <button type="button" id="score-btn" onclick="backToQuiz()"> Quiz Again!</button>
+    </div>
+
+    <!-- javascript file source -->
+    <script src="quiz.js"></script>
+</body>
+</html>

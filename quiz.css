@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nova+Square&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  padding: 0.8rem 0;
+  font-size: 2rem;
+}
+
+/* Background */
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(120deg, rgba(255,248,220,1.5),rgba(220, 20, 60,0.9)),url(/quizbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+img{
+  width: 5.5rem;
+  height: 5.2rem;
+  border-radius: 50%;
+}
+.img{
+  position: fixed;
+}
+
+/* Title */
+#title{
+  text-align:center;
+  padding: 0.8rem 0;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(-120deg, rgba(255,248,220,1.5),rgba(220, 20, 60,0.9)),url(/quizbg.jpg); */
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* QuestionText*/
+#question{
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  
+}
+
+/* QuestionBox*/
+.questions{
+  margin: 3rem auto;
+  width: 90vw;
+  padding: 2rem;
+  cursor: default;
+  border-radius: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* OptionsButton */
+.option{
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 20rem;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(120deg, rgba(220, 20, 60,0.6),rgba(255,248,220,1));
+  border-radius: 4rem;
+}
+.option:hover{
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.833);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+/* AnswerPage */
+ol{
+  position: relative;
+  padding: 0 1.5rem;
+  color: rgb(255, 255, 255);
+}
+span{
+  display: block;
+  padding: 0.1rem 0.7rem;
+  border-radius: 1rem;
+}
+#answer{
+  margin-top: 2.5rem;
+}
+
+/* Question1of5 */
+#stat{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: rgb(255, 255, 255);
+}
+.buttons{
+  text-align: center;
+}
+/* NextButton */
+button{
+  padding: 0.2rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 3rem;
+  color: rgb(250,235,215);
+  background: linear-gradient(120deg, rgba(220, 20, 60,0.3),rgba(255,248,220,0.5));
+}
+button:active{
+  color: rgb(250,235,215);
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(250,235,215, 0.833);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+/* ScoreBoard */
+#scoreboard,#answerBank{
+  width: 50rem;
+  /* background: rgba(230,230,250,0.77); */
+  padding: 4rem;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 5rem;
+  display: none;
+}
+/* ScoreText */
+#score-title{
+  color: rgb(250,235,215);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* ScoreText */
+#score-btn,#check-answer{
+  margin-top: 3rem;
+}
+
+/* ScoreNum */
+#score{
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(255,228,196);
+}
+
+#answerBank li{
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-size: 2.5rem;
+}
+#answers{
+  margin-top: 1rem;
+}
